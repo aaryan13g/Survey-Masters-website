@@ -1,0 +1,415 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+	background-color: #FFFFFF;
+}
+.menubar{
+	width: 100%;
+	background-color: #2DD881;
+	position: fixed;
+  	top: 0px;
+  	left: 0px;
+  	z-index: 2;
+}
+.menubar ul{
+	list-style-type: none;
+	font-family: Roboto;
+	margin: 0;
+	padding: 0;
+}
+.menubar ul>li{
+	display: inline;
+	float: right;
+}
+.menubar ul>li>a{
+	text-decoration: none;
+	display: block;
+	padding: 25px;
+	color: #EDF5E1;
+	transition: background-color 0.2s ease;
+}
+.menubar ul>li>span>a{
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	color: #EDF5E1;
+	font-family: Roboto;
+	font-size: 25px;
+}
+.menubar ul>li>span>a>span{
+	color: #05386B;
+}
+.menubar ul>li>a:hover{
+	color: #EDF5E1;
+	background-color: #05386B;
+}
+
+
+
+/*Index*/
+
+.banner{
+	background-color: #ffffff;
+	width: 100%;
+	left: 0px;
+	top: 71px;
+	text-align: center;
+	animation-name: fadein;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+@keyframes fadein{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.mess{
+	font-family: Berkshire Swash;
+	font-size: 75px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: #414141;
+	font-weight: bold;
+}
+.submess{
+	font-family: Calibri;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: normal;
+}
+.arrow{
+	font-family: Calibri;
+	font-size: 30px;
+	color: #2DD881;
+	text-decoration: none;
+	text-align: center;
+	position: absolute;
+	top: 290px;
+	left: 340px;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes bounce{
+	0%{font-size: 30px;}
+	50%{font-size: 40px;}
+	100%{font-size: 30px;}
+}
+.arrow:hover{
+	text-shadow: 1px 1px white;
+}
+
+.test{
+	background-color: #ffffff;
+	width: 100%;
+	height: 600px;
+	font-family: Calibri;
+	color: #333333;
+	text-align: center;
+	align-content: center;
+}
+.testcust{
+	font-size: 60px;
+	font-family: Calibri;
+	font-style: normal;
+	color: #414141;
+}
+.cust{
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.apple{
+	animation-name: b1;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+}
+@keyframes b1{
+	0%{height: 75px;}
+	12.5%{height: 120px;}
+	25%{height: 75px;}
+}
+.google{
+	animation-name: b2;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-play-state: 
+}
+@keyframes b2{
+	75%{height: 40px;}
+	87.5%{height: 60px;}
+	100%{height: 40px;}
+}
+.tm{
+	animation-name: b3;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes b3{
+	50%{height: 100px;}
+	62.5%{height: 140px;}
+	75%{height: 100px;}
+}
+.un{
+	animation-name: b4;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes b4{
+	25%{height: 85px;}
+	37.5%{height: 120px;}
+	50%{height: 85px;}
+}
+
+.pricing{
+	width: 100%;
+	height: 600px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+}
+.individual{
+	width: 50%;
+	background-color: #FF495C;
+	font-size: 18px;
+	color: #ffffff;
+	font-family: Calibri;
+}
+.enterprize{
+	width: 50%;
+	background-color: #2E5EAA;
+	font-size: 18px;
+	color: #ffffff;
+	font-family: Calibri;
+}
+
+.indabout{
+	position: absolute;
+	left: 0px;
+	margin-top: 850px;
+	width: 100%;
+	height: 400px;
+	font-family: Calibri;
+	background-color: #2F2D2E;
+}
+.abttitle{
+	color: #ffffff;
+	font-size: 25px;
+}
+.abtcontent{
+	color: #B9B9B9;
+	font-size: 16px;
+	text-align: justify;
+	vertical-align: top;
+}
+.abtinput{
+	width: 80%;
+  	padding: 12px;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+.abtsubmit{
+	background-color: #4CAF50;
+  	color: white;
+  	padding: 12px 20px;
+  	border: none;
+ 	border-radius: 4px;
+  	cursor: pointer;
+}
+
+
+
+/*Plans*/
+
+.plansmain{
+	background-color: #ffffff;
+	height: 550px;
+	margin: auto;
+	width: 70%;
+	border-collapse: collapse;
+}
+.planscontainer{
+	background-color: #f9f9f9;
+	border: 0px solid;
+	border-radius: 5px;
+	height: 100%;
+	margin: 2%;
+	font-family: Roboto;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0px 0px 10px #7B7F80;
+}
+.planscontainer:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 0px 15px #7B7F80;	
+}
+.plantable{
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+}
+.plantable tr{
+	border-bottom: 1px solid #D0D0D0;
+	font-size: 14px;
+}
+.plantable td{
+	padding: 5px;
+}
+.planname{
+	width: 100%;
+	height: 15%;
+	font-size: 18px;
+	background-color: #2DD881;
+	color: #ffffff;
+	text-align: center;
+	padding: 7% 0px;
+	border: 1px solid;
+}
+.planprice{
+	height: 10%;
+	font-size: 18px;
+	background-color: #2DD881;
+	color: #ffffff;
+	text-align: center;
+	border: 1px solid;
+}
+.planprice a{
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	padding-top: 25px;
+}
+.tick{
+	font-size: 20px;
+	padding: 20px;
+}
+
+.button {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #2DD881;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background .8s ease;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: '';
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+          transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+          transform: scaleY(0);
+}
+/*
+.blogmess{
+	width: 800px;
+	height: 400px;
+	margin: auto;
+}*/
+
+.subblog1{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin-left: 400px;
+}
+.subblog2{
+	width: 400px;
+	height:  400px;
+	display: inline-block;
+}
+
+.arrow1{
+	font-family: Calibri;
+	font-size: 30px;
+	color: #2DD881;
+	text-decoration: none;
+	text-align: center;
+	position: absolute;
+	top: 290px;
+	left: 340px;
+	animation-name: bounce1;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes bounce1{
+	0%{font-size: 30px;}
+	50%{font-size: 40px;}
+	100%{font-size: 30px;}
+}
+.arrow1:hover{
+	text-shadow: 2px 2px #2DD881;
+}
+
+.container{
+	height: 500px;
+	width: 70%;
+}
+.container1{
+  	text-align: center;
+  	margin: 5%;
+}
+
+.container2{
+	height: 1000px;
+	width: 70%;
+}
